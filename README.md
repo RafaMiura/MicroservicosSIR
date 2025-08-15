@@ -2,7 +2,18 @@
 
 API Java para estudo de Spring Boot
 
-## Variáveis de ambiente
+## Criando o .jar 
+
+...
+mvn clean package
+...
+
+-Localizar o .jar em/target
+...
+java -jar target/study-apir-0.0.1-SNAPSHOT.jar
+...
+
+## Variáveis de ambiente declaração
 
 ...
 export DB_USER=root
