@@ -5,11 +5,14 @@ API Java para estudo de Spring Boot
 ## Variáveis de ambiente
 
 ...
-export DB_USER=<usuario do bd>
-export DB_PASSWORD=<senha do bd>
+export DB_USER=root
+export DB_PASSWORD=root_pwd
 ...
 
+* .env
 
+...
+export $(cat .env | xargs)
 
 
 ## MER
