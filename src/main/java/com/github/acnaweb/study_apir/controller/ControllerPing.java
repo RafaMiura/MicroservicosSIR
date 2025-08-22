@@ -7,9 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("ping")
 public class ControllerPing { 
+@RestController
+@RequestMapping("/api/${api.version}/produtos")
+public class ProdutoController {
 
-    @GetMapping
-    public String ping() {
-        return "pong";
+    @Value("${api.version}")
+    private String version;
+
+    @GetMapping("/version")
+    public String version() {
+        return "Versão atual: " + version;
     }
+}
 }
