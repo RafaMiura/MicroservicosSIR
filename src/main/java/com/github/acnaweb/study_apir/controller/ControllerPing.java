@@ -16,7 +16,7 @@ public class ProdutoController {
 
     @GetMapping("/version")
     public String version() {
-        return "Versão atual: " + version;
+        return version;
     }
 }
 }
